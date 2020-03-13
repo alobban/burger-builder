@@ -33,7 +33,6 @@ class BurgerBuilder extends Component {
         let price = this.state.totalPrice;
         let purchasable = this.state.purchasable;
         for (let ingredient in ingredients) {
-          console.log(ingredient);
           price += INGREDIENT_PRICES[ingredient] * ingredients[ingredient];
           if (ingredients[ingredient] > 0) {
             purchasable = true;
